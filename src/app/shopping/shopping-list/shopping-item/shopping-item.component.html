@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12">
+       <form>
+           <div class="row">
+              <div class="col-sm-5 form-group">
+                    <label type="text">Enter Name</label>
+                    <input type="text" id="name" class="form-control"/>
+              </div>
+              <div class="col-sm-2 form-group">
+                    <label>Amount</label>
+                    <input type="text" id="amount" class="form-control"/>
+              </div>
+              <div class="row">
+                 <div class="col-xs-12">
+                     <button class="btn btn-success" type="submit">Add</button>
+                     <button class="btn btn-danger" type="button">Delete Item</button>
+                     <button class="btn btn-primary" type="button">Clear</button>
+                 </div>
+              </div>
+           </div>
+       </form>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 15px;">
+  <div class="col-md-8">
+    <ul class="list-group">
+        <a class="list-group-item" style="cursor: pointer;">
+            ({{ShopChild.amount}})
+        </a>
+        <p>({{ShopChild.name}})hiiiiiiiiii </p>
+    </ul>
+    <p appBasicHighlighter>Paragraph with my own directive</p>
+  </div>
+</div>
