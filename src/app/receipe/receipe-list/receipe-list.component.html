@@ -1,9 +1,10 @@
 <div class="container">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-success" style="margin-left: 10px;">Add Receipe</button>
+            <button class="btn btn-success" style="margin-left: 10px;" (click)="RedirectTO()">Add Receipe</button>
         </div>
-    </div>
+    </div> -->
+    <router-outlet></router-outlet>
     <div class="row">
         <div class="col-md-12">    
             <app-receipe-item *ngFor="let inn of ReceipeList" [ReceipeItem]="inn" (PassDataToReceipeList)="OnPassingDataToReceipe(inn)"></app-receipe-item>

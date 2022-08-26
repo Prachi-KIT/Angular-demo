@@ -1,11 +1,11 @@
 <div class="container">
    <div class="row">
-    <div class="divdesign col-md-3">
+    <div class="divdesign col-sm-3">
       <div class="pull-left">
-        <img src="https://t4.ftcdn.net/jpg/03/11/83/33/240_F_311833307_EeKZlDldlaBfpgzp4MXupiQga7td3l97.jpg" alt="" class="img-responsive">
+        <img [src]="Img" alt="" class="img-responsive">
       </div>
         <p><strong>Receipe Name</strong> - {{ReceipeItem.name}}</p>
-        <p><strong>Price</strong> - {{ReceipeItem.receipeid}}</p>
+        <p><strong>Price</strong> - {{ReceipeItem.receipeid}} Rs.</p>
         <p><strong>Desciption</strong> {{ReceipeItem.desc}}</p>
         
         <a href="#" class="btn btn-primary" style="margin-top: 5px;" (click)="OnSelectedReceipe()">Show More</a>

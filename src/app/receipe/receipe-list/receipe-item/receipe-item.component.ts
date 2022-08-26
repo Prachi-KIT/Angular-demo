@@ -11,13 +11,16 @@ import { receipedemo } from '../receipedemo.model';
 export class ReceipeItemComponent implements OnInit {
   
   @Input() ReceipeItem:receipedemo;
+  Img:string;
   @Output() PassDataToReceipeList=new EventEmitter<void>();
   constructor()
   {
-
+    
   }
   
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.Img=this.ReceipeItem.receipeimg; 
+  }
   OnSelectedReceipe()
   {
     this.PassDataToReceipeList.emit()
